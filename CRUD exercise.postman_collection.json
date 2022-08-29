@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "0775f07b-1a05-48af-aec1-b96e7cd33dfa",
+		"name": "CRUD exercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21617836"
+	},
+	"item": [
+		{
+			"name": "postCar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"modelName\": \"Ferrari Roma\",\r\n    \"type\": \"Hypercar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/car/postCar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"postCar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/car/getAllCars",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"getAllCars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/car/getCar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"getCar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "errateGetCar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/car/getCar/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"getCar",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putCar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"modelName\": \"Fiat Panta\",\r\n    \"type\": \"Crossover\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/car/putCar/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"putCar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "erratePutCar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"modelName\": \"Fiat Panta\",\r\n    \"type\": \"Crossover\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/car/putCar/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"putCar",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/car/deleteCar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"deleteCar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAllCar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/car/deleteAllCar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"deleteAllCar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
